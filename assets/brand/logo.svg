@@ -1,0 +1,39 @@
+<svg width="220" height="220" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hardware Security Field Guide logo: a shield made of circuit traces around a padlock">
+  <title>Hardware Security Field Guide logo</title>
+  <defs>
+    <linearGradient id="hsfg-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1f2a"/>
+      <stop offset="1" stop-color="#132c3a"/>
+    </linearGradient>
+    <linearGradient id="hsfg-trace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3ddc97"/>
+      <stop offset="1" stop-color="#2a9d8f"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="2" y="2" width="216" height="216" rx="28" fill="url(#hsfg-bg)" stroke="#2a9d8f" stroke-width="2"/>
+
+  <!-- Shield outline -->
+  <path d="M110 24 L176 46 V108 C176 148 146 178 110 196 C74 178 44 148 44 108 V46 Z"
+        fill="none" stroke="url(#hsfg-trace)" stroke-width="5" stroke-linejoin="round"/>
+
+  <!-- Circuit traces radiating from the shield, standing in for "hardware" -->
+  <g stroke="#3ddc97" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.85">
+    <path d="M44 70 H22 M22 70 V58"/>
+    <path d="M44 120 H18 M18 120 V134"/>
+    <path d="M176 70 H198 M198 70 V58"/>
+    <path d="M176 120 H202 M202 120 V134"/>
+    <circle cx="22" cy="58" r="3" fill="#3ddc97"/>
+    <circle cx="18" cy="134" r="3" fill="#3ddc97"/>
+    <circle cx="198" cy="58" r="3" fill="#3ddc97"/>
+    <circle cx="202" cy="134" r="3" fill="#3ddc97"/>
+  </g>
+
+  <!-- Padlock, standing in for "security" -->
+  <g>
+    <rect x="90" y="104" width="40" height="32" rx="6" fill="#e9f6f1"/>
+    <path d="M98 104 V92 a12 12 0 0 1 24 0 V104" fill="none" stroke="#e9f6f1" stroke-width="6"/>
+    <circle cx="110" cy="118" r="4" fill="#0b1f2a"/>
+    <rect x="108" y="120" width="4" height="9" fill="#0b1f2a"/>
+  </g>
+</svg>

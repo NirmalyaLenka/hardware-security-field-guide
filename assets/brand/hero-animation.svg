@@ -1,0 +1,37 @@
+<svg width="640" height="160" viewBox="0 0 640 160" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-label="Animated circuit trace connecting icons for electronics, protocols, debugging, firmware, and security, representing the project's learning path">
+  <title>HSFG learning path animation</title>
+  <rect width="640" height="160" fill="#0b1f2a"/>
+
+  <!-- base trace -->
+  <path id="trace" d="M30 80 H610" stroke="#1c3e4d" stroke-width="4" fill="none"/>
+
+  <!-- animated pulse traveling along the trace, communicating "signal flow" through the five levels -->
+  <circle r="6" fill="#3ddc97">
+    <animateMotion dur="6s" repeatCount="indefinite" path="M30 80 H610"/>
+  </circle>
+
+  <!-- five stage nodes: electronics -> protocols -> debugging -> firmware -> security -->
+  <g font-family="monospace" font-size="12" fill="#cfe9df" text-anchor="middle">
+    <g>
+      <circle cx="80" cy="80" r="18" fill="#132c3a" stroke="#2a9d8f" stroke-width="3"/>
+      <text x="80" y="115">Electronics</text>
+    </g>
+    <g>
+      <circle cx="220" cy="80" r="18" fill="#132c3a" stroke="#2a9d8f" stroke-width="3"/>
+      <text x="220" y="115">Protocols</text>
+    </g>
+    <g>
+      <circle cx="360" cy="80" r="18" fill="#132c3a" stroke="#2a9d8f" stroke-width="3"/>
+      <text x="360" y="115">Debugging</text>
+    </g>
+    <g>
+      <circle cx="480" cy="80" r="18" fill="#132c3a" stroke="#2a9d8f" stroke-width="3"/>
+      <text x="480" y="115">Firmware</text>
+    </g>
+    <g>
+      <circle cx="600" cy="80" r="18" fill="#132c3a" stroke="#2a9d8f" stroke-width="3"/>
+      <text x="600" y="115">Security</text>
+    </g>
+  </g>
+</svg>

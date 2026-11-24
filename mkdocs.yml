@@ -1,0 +1,45 @@
+site_name: Hardware Security Field Guide
+site_description: A practical, beginner-friendly guide to understanding, debugging, and securing hardware and IoT devices.
+repo_url: https://github.com/NirmalyaLenka/hardware-security-field-guide
+docs_dir: docs
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: teal
+      accent: teal
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Learning Path: learning-path.md
+  - Safety and Authorized Use: safety/index.md
+  - Level 1 - Electronics:
+      - Fundamentals: electronics/fundamentals.md
+  - Level 2 - Protocols:
+      - UART: protocols/uart.md
+  - Level 3 - Debugging:
+      - Finding an Unlabeled UART Console: debugging/uart-console-discovery.md
+  - Level 4 - Firmware:
+      - Firmware Basics: firmware/firmware-basics.md
+  - Level 5 - Hardware Security:
+      - Threat Modeling: hardware-security/threat-modeling.md
+  - Level 6 - Practical Labs:
+      - "Lab 01: Boot Console": practical-labs/lab-01-uart-console.md
+  - Glossary: glossary.md
+  - FAQ: faq.md
+  - References: references.md
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
